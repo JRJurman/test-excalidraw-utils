@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<button>PREVIEW</button>
 		<script src="https://unpkg.com/@excalidraw/utils@0.1.1/dist/excalidraw-utils.min.js"></script>
 		<script>
   		const { exportToSvg, exportToBlob } = ExcalidrawUtils;
@@ -37,9 +36,7 @@
 				appState: { viewBackgroundColor: "#ffffff", gridSize: null },
 			};
 
-			document.querySelector('button').onclick = () => {
-				document.body.appendChild(exportToSvg(mockDiagram))
-			}
+			document.body.appendChild(exportToSvg(mockDiagram))
 		</script>
 	</body>
 </html>
